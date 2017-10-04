@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-simple-contact\n"
+"POT-Creation-Date: 2017-09-28 11:57+0200\n"
+"PO-Revision-Date: 2017-09-28 11:59+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: controllers/messages_widget.php:10
+msgid "A contact page"
+msgstr "A contact page."
+
+#: controllers/messages_widget.php:36
+msgid "Message send"
+msgstr "The message has been sended."
+
+#: views/widgets/contact.php:5
+msgid "email"
+msgstr "Email"
+
+#: views/widgets/contact.php:7
+msgid "subject"
+msgstr "Subject"
+
+#: views/widgets/contact.php:9
+msgid "message"
+msgstr "Message"
+
+#: views/widgets/contact.php:11
+msgid "save"
+msgstr "Send"

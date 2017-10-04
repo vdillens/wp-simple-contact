@@ -1,0 +1,22 @@
+.wp_simple_contact_notifications {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    margin-bottom: 20px;
+}
+
+.wp_simple_contact_notifications_success {
+    color: white;
+    background: green;
+}
+.wp_simple_contact_notifications_error {
+    color: white;
+    background: red;
+}
+.wp_simple_contact_notifications_common {
+    color: white;
+    background: blue;
+}
+
+
