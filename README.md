@@ -23,4 +23,7 @@ Setp 4 : Go to your contact page and enjoy !
 
 ![Example](docs/Contact_us_page.png)
 
+## For issues
+
+For issues, please go to Gitlab [here](https://gitlab.com/dillenschneider.v/wp-simple-contact/issues)
 
