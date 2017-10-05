@@ -3,9 +3,8 @@ before_script:
   - wget -c http://static.phpmd.org/php/latest/phpmd.phar
   
 tests:
+  image: php:7.0
   script:
-    - apt-cache policy php*
-    - apt-get install php -y
     - php -v
     - php phpcs.phar --standard=PSR2 .
     - php phpmd.phar . text codesize
