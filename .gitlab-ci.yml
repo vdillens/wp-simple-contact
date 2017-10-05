@@ -1,4 +1,5 @@
 before_script:
+  - apt-get install php
   - curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
   - wget -c http://static.phpmd.org/php/latest/phpmd.phar
   
