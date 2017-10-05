@@ -4,6 +4,7 @@ before_script:
   
 tests:
   script:
+    - apt-cache policy php*
     - apt-get install php -y
     - php -v
     - php phpcs.phar --standard=PSR2 .
