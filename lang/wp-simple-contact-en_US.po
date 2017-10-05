@@ -1,9 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-simple-contact\n"
-"POT-Creation-Date: 2017-09-28 11:57+0200\n"
-"PO-Revision-Date: 2017-09-28 11:59+0200\n"
+"POT-Creation-Date: 2017-10-05 16:34+0200\n"
+"PO-Revision-Date: 2017-10-05 16:35+0200\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,30 +13,69 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __\n"
-"Last-Translator: \n"
-"Language: en_US\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: controllers/admin.php:18 controllers/admin.php:19 views/admin/home.php:9
+msgid "WP SimpleContact"
+msgstr "WP SimpleContact"
 
 #: controllers/messages_widget.php:10
 msgid "A contact page"
 msgstr "A contact page."
 
-#: controllers/messages_widget.php:36
+#: controllers/messages_widget.php:28
+msgid "Email invalid"
+msgstr "Email invalid"
+
+#: controllers/messages_widget.php:40
 msgid "Message send"
 msgstr "The message has been sended."
 
-#: views/widgets/contact.php:5
-msgid "email"
+#: views/admin/home.php:12 views/admin/home.php:51
+msgid "Search"
+msgstr "Search"
+
+#: views/admin/home.php:18
+msgid "Begin date"
+msgstr "Begin date"
+
+#: views/admin/home.php:26
+msgid "End date"
+msgstr "End date"
+
+#: views/admin/home.php:34 views/admin/home.php:59 views/widgets/contact.php:5
+#, fuzzy
+#| msgid "email"
+msgid "Email"
 msgstr "Email"
 
-#: views/widgets/contact.php:7
-msgid "subject"
-msgstr "Subject"
-
-#: views/widgets/contact.php:9
-msgid "message"
+#: views/admin/home.php:42 views/admin/home.php:61 views/widgets/contact.php:9
+#, fuzzy
+#| msgid "message"
+msgid "Message"
 msgstr "Message"
 
-#: views/widgets/contact.php:11
-msgid "save"
-msgstr "Send"
+#: views/admin/home.php:58
+msgid "Date"
+msgstr "Date"
+
+#: views/admin/home.php:60 views/widgets/contact.php:7
+#, fuzzy
+#| msgid "subject"
+msgid "Subject"
+msgstr "Subject"
+
+#: views/widgets/contact.php:6
+msgid "Write your email here..."
+msgstr "Write your email here..."
+
+#: views/widgets/contact.php:8
+msgid "For what reason you need to contact us..."
+msgstr "For what reason you need to contact us..."
+
+#: views/widgets/contact.php:13
+msgid "Save"
+msgstr "Save"
+
+#~ msgid "save"
+#~ msgstr "Send"
