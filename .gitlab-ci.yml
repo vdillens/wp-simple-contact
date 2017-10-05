@@ -1,0 +1,9 @@
+before_script:
+  - curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+  - wget -c http://static.phpmd.org/php/latest/phpmd.phar
+  
+tests:
+  script:
+    - php -v
+    - php phpcs.phar --standard=PSR2 .
+    - php phpmd.phar . text codesize
