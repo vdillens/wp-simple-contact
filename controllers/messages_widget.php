@@ -1,5 +1,5 @@
 <?php
-class WPSimpleContactMessagesWidget extends WP_Widget
+class WPSimpleContactMessagesWidget extends \WP_Widget
 {
     protected $messages;
 
@@ -8,9 +8,11 @@ class WPSimpleContactMessagesWidget extends WP_Widget
         include_once __DIR__ . '/../entity/messages.php';
         $this->messages = new WPSimpleContactMessages();
         $description = __('A contact page', WP_SIMPLE_CONTACT_TRANSLATE_DOMAIN);
-        parent::__construct('wp_simple_contact_message_widget', 'Simple Contact Form',
-            array('description' => $description));
-
+        parent::__construct(
+            'wp_simple_contact_message_widget',
+            'Simple Contact Form',
+            array('description' => $description)
+        );
     }
     public function widget($args, $instance)
     {
@@ -41,7 +43,6 @@ class WPSimpleContactMessagesWidget extends WP_Widget
                 $notification_style = "wp_simple_contact_notifications_success";
                 unset($emailValue, $subjectValue, $messageValue);
             }
-
         }
         include __DIR__ . '/../views/widgets/contact.php';
 
@@ -58,13 +59,18 @@ class WPSimpleContactMessagesWidget extends WP_Widget
         $title = !empty($instance['title']) ? $instance['title'] : esc_html__('contacts table', 'text_domain');
         ?>
         <p>
-            <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php esc_attr_e('Title:', 'text_domain'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr($title); ?>">
+            <label for="<?php echo esc_attr($this->get_field_id('title')); ?>">
+                <?php esc_attr_e('Title:', 'text_domain'); ?>
+            </label>
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>"
+                   name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text"
+                   value="<?php echo esc_attr($title); ?>" />
         </p>
         <?php
     }
 }
 
+// Add Widget
 add_action('widgets_init', function () {
-    register_widget('WPSimpleContactMessagesWidget');
+    register_widget("WPSimpleContact\\Controllers\\WPSimpleContactMessagesWidget");
 });

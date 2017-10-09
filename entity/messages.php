@@ -1,6 +1,7 @@
 <?php
 
-class WPSimpleContactMessages {
+class WPSimpleContactMessages
+{
 
     private $tableName;
 
@@ -10,7 +11,8 @@ class WPSimpleContactMessages {
         $this->tableName = "{$wpdb->prefix}simple_contact_messages";
     }
 
-    public function save($email, $subject, $message){
+    public function save($email, $subject, $message)
+    {
         global $wpdb;
         $wpdb->insert($this->tableName, array(
             'email' => $email,
@@ -20,7 +22,8 @@ class WPSimpleContactMessages {
         ));
     }
 
-    public function getList($beginDate, $endDate, $email, $message) {
+    public function getList($beginDate, $endDate, $email, $message)
+    {
         global $wpdb;
 
         $query = "SELECT * FROM {$this->tableName} WHERE 1 ";
@@ -37,8 +40,6 @@ class WPSimpleContactMessages {
             $query .= " AND message LIKE '%$message%'";
         }
 
-        return $wpdb->get_results($query, ARRAY_A );
-
+        return $wpdb->get_results($query, ARRAY_A);
     }
-
 }

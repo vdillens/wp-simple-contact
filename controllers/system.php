@@ -4,11 +4,13 @@
  * Class WPSimpleContactSystem
  * Use for install/uninstall database
  */
-class WPSimpleContactSystem {
+class WPSimpleContactSystem
+{
     /**
      * Install the database
      */
-    public static function install() {
+    public static function install()
+    {
         global $wpdb;
         $query = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}simple_contact_messages (
                     id INT AUTO_INCREMENT PRIMARY KEY, 
@@ -23,7 +25,8 @@ class WPSimpleContactSystem {
     /**
      * Remove the database
      */
-    public static function uninstall() {
+    public static function uninstall()
+    {
         global $wpdb;
         $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}simple_contact_messages;");
     }

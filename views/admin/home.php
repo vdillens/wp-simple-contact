@@ -18,7 +18,8 @@
                             <label for="begin_date"><?= __('Begin date', WP_SIMPLE_CONTACT_TRANSLATE_DOMAIN); ?></label>
                         </th>
                         <td>
-                            <input type="text" class="custom_date" id="begin_date" name="begin_date" value="<?= $beginDateValue ?>"/>
+                            <input type="text" class="custom_date" id="begin_date" name="begin_date"
+                                   value="<?= $beginDateValue ?>"/>
                         </td>
                     </tr>
                     <tr>
@@ -26,7 +27,8 @@
                             <label for="end_date"><?= __('End date', WP_SIMPLE_CONTACT_TRANSLATE_DOMAIN); ?></label>
                         </th>
                         <td>
-                            <input type="text" class="custom_date" id="end_date" name="end_date" value="<?= $endDateValue ?>"/>
+                            <input type="text" class="custom_date" id="end_date" name="end_date"
+                                   value="<?= $endDateValue ?>"/>
                         </td>
                     </tr>
                     <tr>
@@ -48,10 +50,10 @@
                 </tbody>
             </table>
 
-            <?php submit_button(__('Search', WP_SIMPLE_CONTACT_TRANSLATE_DOMAIN) ); ?>
+            <?php submit_button(__('Search', WP_SIMPLE_CONTACT_TRANSLATE_DOMAIN)); ?>
         </form>
     </div>
-    <?php if (!empty($messages)): ?>
+    <?php if (!empty($messages)) : ?>
         <table class="wp-list-table widefat fixed striped">
             <thead>
                 <tr>
@@ -62,7 +64,7 @@
                 </tr>
             </thead>
             <tbody>
-        <?php foreach ($messages as $message): ?>
+        <?php foreach ($messages as $message) : ?>
                 <tr>
                     <td><?= $message['date']; ?></td>
                     <td><?= $message['email']; ?></td>
