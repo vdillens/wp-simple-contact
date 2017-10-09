@@ -6,5 +6,5 @@ tests:
   image: php:7.0
   script:
     - php -v
-    - php phpcs.phar --standard=PSR2 .
+#    - php phpcs.phar --standard=PSR2 .
     - php phpmd.phar . text codesize
