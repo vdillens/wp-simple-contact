@@ -72,5 +72,5 @@ class WPSimpleContactMessagesWidget extends \WP_Widget
 
 // Add Widget
 add_action('widgets_init', function () {
-    register_widget("WPSimpleContact\\Controllers\\WPSimpleContactMessagesWidget");
+    register_widget("WPSimpleContactMessagesWidget");
 });
